@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autonomous Driving Algorithm - Final Year Computer Engineering Project">
+    <meta name="keywords" content="autonomous driving, computer vision, robotics, Gazebo simulation, ROS">
+    <meta name="author" content="Can Soysal, Cagri Sanli, Mustafa Cem Hur, Taha Ugan, Taylan Kayali">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Autonomous Driving Algorithm Project">
+    <meta property="og:description" content="Final Year Computer Engineering Project - Developing autonomous driving algorithms with Gazebo simulation">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Autonomous Driving Algorithm Project">
+    <meta property="twitter:description" content="Final Year Computer Engineering Project">
+
+    <title>Autonomous Driving Algorithm - Final Project</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=isJ74DttvTyFzOsvhoZ7NBxd86Epmzun4ZwRsrbqyz4Chb7_tB7PBTlfAycITrsmTRdLcsU3YYNtzDffQ-FLjRAbLTCXXpi1VNpV8J1CAgkQTXYmNwXlPMHD0pELmYpRB1yo6bLqRShuOETfNanogmGQzCU44v1C6le1Pk_QaytjilDI5WYqXNU_9zE0fqj50AxHWkMk8d7_mq-8nzLHdryQPZeRviAA2zeOQLPC_GvCZKdaegDdZDEfvMo0mb-RO06eJuH3jMKCx-6bgZkcHPU9u76z9gcLUOHmpcH606LP6j2rBO_7Nxs7j2wmFJX002Ai9vRjmT634SYC9c3YK7LP3tLn11gUddgpVB-NGySyHyW2MC3EwGZvMALY8XMDOko0lo9f7kUstZvHXGDrOJs80GUsU3QzKdpeowNoIcAJEB2sg2UGfX5onamDeEVHSG0fb01lxwq3ajVFM1yp6dzvYPmZqEr8-ejrGgZNW7-2lgblAHWhXrFOghCIwczhqyLunmMMpdVXLZ22dNtaajhLmL_mzuhY_zM3mFaBfx1zrGljbMHlivf__4rJOlm-avVF4JrAIH_-3U1CULYS-3ZNb3FQ5pILCjvUMd26MNL6LLMXofh3rw-kUT2DU1SwTPm6CD-sT3UIJGdESrn9lst11L0bsJ3-8BWC9cnSRVUsBCsGZGQbD_8f7V53Ux56Q0hlEe85olJyX0jJWmiH-J4NirfGDiZX3AAA6dme3SWMvBeggbQaJO7ZfjyjAjFwdErEMM4VzZyOzTAA-HMjPrLl-Uj5C2eioCJ2UfswalBkdZjDi6tfAZJQ5ffMwfLM0aNMttVqflL-S26oJnurfy3stXKVEl0aMF5vhsBl4D_1u23FCHvfoyMZAnkeZ2C-55Iw9R1Etvsd0q0rL9L4_nA6hD6P39LfQiVGpBGXzbOEBhPzF2t3Ff-9u18r5Ot2-ZlFXNaaT1EOOgAnTwRkCKW_bWBE-jDpzjteGldVF-izNCnIFNbGKDcHsVlXeR_WueKexAdAtPmyjacjb3oIle1pN4YkQVVzluh3rVQaaA8sHFWPirdx_iqL-k6JXN41eZijr4Qrv8AEl1RODYlyP24s4USIKk3Y5y0jE3m3MOKbZElteK9bbHI_6N2l9OL1qYQS9mnqgaSPyQavLO8Ocb3Lp8ZmWv9YXJqs5eEeECTKMgD4NWSecKZg86fEP-Wlpdw8jP9Bwhs-Q5tAtnuLT3JXM7ssQsODuwuBZ4ta2erQIlSKK-JlUMme2nQAy-fDwMcyCU95elGCJ0NrR2EfBfO-2AsO0HKIWr722VL8hJF93SmnBlKyRrf2ZcCaspnQ8RkAGleKRlpqto4-Ti85DF51QFd7EIbAw2aTCWnTpt35PrG-DXIQIiIF55O5Zh1kS3Di8Fei1gf-9rtXCXg6TR6hWH7x6YGDjsk5QxfEY2Nnaz_5KQJpvQBLlhXYh8gzm0wxCegB4JRGP9g6l4EKIP9gu5KR-Yqg4Uh4ulP71Kk3Aft5Q3eH2RxGIFWniyaathnRqpbfpSgyaODKf-HiS2CLt0oOeJnx54aPo8MZesEjSN6nW9I5aep8Bnrt7cFIkaLd6EI_iZawLORxDq9eZcHj2HINN5-kckO2hXbyndLH3Z9boxcT_GKJboTBz_7bw7gn3ymp46bPKKwTy_xkmwgnTiMIc1TIZ1uPX4LFW8k7kCHELFRCp6eM4RWY0u-611VxyiGfHJpzfg_w-2ntZotFJAMwmdVr2cl73xz_rRtdSvaNZp5qo7E8qz2f8POvikNaDx3W3UPsjIoPAgRgi6_pQkz8QwhHiD4b5X4PLRrJyQsR7tB1e7xXGsd_ru8j1WrvAATyL9cDU3wJ6YrCOHOKz58wkAMchfMbRAlVnudQmoHxGnzU-Lym2ruisdqb38slj0EZMveuSK0Lo0HVZoiz6-5jMuied9ndYnNpWmKNFGxnGjG0HcCJtPKWHNVOEz8T5wmwWY7ZAxqfqHlWVsMQSOJJnYad8vNPF640m-JFlo2snn12kMuP5TlAbXBw97KZgijci6G9jmAmtpLlfVefev28F9xvKnGHIRw03MVaxdI2R20o4oi0EwFK4fwiS8KLWgzuQjGANtTpCDyWe5SRXuC-zsgy_hhw_mFkSD0OYocl4RERZCmSpdjdzqnaFu3_DXCfy6-7Y16hJPP6lvxLcQ9PpHYT_JDy-YKfmnnU1e0vS0Lyzq0NEY2gkdP3LPfQ5j4ee-MVQ-O_6g84ew" charset="UTF-8"></script></head>
+<body>
+    <header>
+        <h1>🚗 Autonomous Driving Algorithm</h1>
+        <p>Final Year Computer Engineering Project</p>
+        <p style="margin-top: 1rem; font-size: 0.95rem;">Fall 2025</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>
+                This project focuses on developing an <strong>autonomous driving algorithm</strong> capable of 
+                navigating complex environments. Our system integrates computer vision, sensor fusion, and 
+                path planning to create a robust self-driving solution.
+            </p>
+            <p>
+                The project utilizes <strong>Gazebo simulation</strong> for initial development and testing, 
+                providing a safe and cost-effective environment for algorithm validation before real-world deployment.
+            </p>
+
+            <div class="highlight-box">
+                <strong>⚠️ Note:</strong> The simulation platform may change as the project evolves based on 
+                performance requirements and feature needs.
+            </div>
+
+            <h3>Key Features</h3>
+            <div class="tech-stack">
+                <span class="tech-badge">Computer Vision</span>
+                <span class="tech-badge">Path Planning</span>
+                <span class="tech-badge">Sensor Fusion</span>
+                <span class="tech-badge">Gazebo Simulation</span>
+                <span class="tech-badge">ROS 2</span>
+                <span class="tech-badge">Deep Learning</span>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Team Members</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Can Soysal</h3>
+                    <p style="color: var(--light-text); margin-top: 0.5rem;">Computer Engineering</p>
+                </div>
+                <div class="team-member">
+                    <h3>Cagri Sanli</h3>
+                    <p style="color: var(--light-text); margin-top: 0.5rem;">Computer Engineering</p>
+                </div>
+                <div class="team-member">
+                    <h3>Mustafa Cem Hur</h3>
+                    <p style="color: var(--light-text); margin-top: 0.5rem;">Computer Engineering</p>
+                </div>
+                <div class="team-member">
+                    <h3>Taha Ugan</h3>
+                    <p style="color: var(--light-text); margin-top: 0.5rem;">Computer Engineering</p>
+                </div>
+                <div class="team-member">
+                    <h3>Taylan Kayali</h3>
+                    <p style="color: var(--light-text); margin-top: 0.5rem;">Computer Engineering</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <h2>Project Objectives</h2>
+            <ul>
+                <li>Develop a robust autonomous navigation algorithm</li>
+                <li>Implement real-time object detection and tracking</li>
+                <li>Create efficient path planning and obstacle avoidance systems</li>
+                <li>Build a comprehensive simulation environment for testing</li>
+                <li>Validate algorithm performance in various scenarios</li>
+                <li>Prepare for potential real-world deployment</li>
+            </ul>
+        </section>
+
+        <section id="methodology">
+            <h2>Methodology</h2>
+
+            <h3>System Architecture</h3>
+            <p>
+                Our autonomous driving system consists of three main components:
+            </p>
+            <ul style="margin-top: 1rem;">
+                <li><strong>Perception Module:</strong> Processes sensor data for environment understanding</li>
+                <li><strong>Planning Module:</strong> Generates optimal trajectories and decisions</li>
+                <li><strong>Control Module:</strong> Executes planned actions through vehicle actuators</li>
+            </ul>
+
+            <h3>Simulation Environment</h3>
+            <p>
+                We are currently using <strong>Gazebo</strong> as our primary simulation platform, which provides:
+            </p>
+            <ul style="margin-top: 1rem;">
+                <li>High-fidelity physics simulation</li>
+                <li>Realistic sensor models (LIDAR, cameras, GPS, IMU)</li>
+                <li>Integration with ROS 2 for modular development</li>
+                <li>Customizable environments and scenarios</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>ℹ️ Simulation Flexibility:</strong> While Gazebo is our current choice, we maintain 
+                a modular architecture that allows switching to alternative simulators (CARLA, SUMO, etc.) 
+                if project requirements change.
+            </div>
+
+            <h3>Technologies Used</h3>
+            <div style="margin-top: 1rem;">
+                <p><strong>Programming Languages:</strong></p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">C++</span>
+                </div>
+
+                <p style="margin-top: 1rem;"><strong>Frameworks & Tools:</strong></p>
+                <div class="tech-stack">
+                    <span class="tech-badge">ROS 2</span>
+                    <span class="tech-badge">Gazebo</span>
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">TensorFlow/PyTorch</span>
+                    <span class="tech-badge">NumPy</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress">
+            <h2>Project Progress <span class="status-badge">In Development</span></h2>
+
+            <h3>Overall Completion</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" data-progress="25">0%</div>
+            </div>
+
+            <h3>Timeline & Milestones</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: Research & Planning ✅</h4>
+                    <p>Literature review, technology selection, and project architecture design</p>
+                    <p style="color: var(--light-text); font-size: 0.9rem;">Completed: October 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 2: Simulation Setup 🔄</h4>
+                    <p>Gazebo environment configuration, sensor integration, and basic vehicle modeling</p>
+                    <p style="color: var(--light-text); font-size: 0.9rem;">In Progress</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 3: Algorithm Development 📅</h4>
+                    <p>Perception algorithms, path planning, and control system implementation</p>
+                    <p style="color: var(--light-text); font-size: 0.9rem;">Planned: November 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 4: Testing & Optimization 📅</h4>
+                    <p>Comprehensive testing, performance tuning, and edge case handling</p>
+                    <p style="color: var(--light-text); font-size: 0.9rem;">Planned: December 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Phase 5: Documentation & Presentation 📅</h4>
+                    <p>Final report, presentation preparation, and demonstration</p>
+                    <p style="color: var(--light-text); font-size: 0.9rem;">Planned: January 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="documentation">
+            <h2>Documentation</h2>
+
+            <h3>Quick Links</h3>
+            <div style="margin: 2rem 0;">
+                <a href="#" class="btn">📄 Project Report</a>
+                <a href="#" class="btn">📊 Presentation Slides</a>
+                <a href="#" class="btn">💻 GitHub Repository</a>
+                <a href="#" class="btn btn-secondary">📝 Meeting Notes</a>
+            </div>
+
+            <h3>Setup Instructions</h3>
+            <p>To run the simulation environment:</p>
+            <pre><code># Clone the repository
+git clone https://github.com/YOUR-USERNAME/autonomous-driving-project.git
+cd autonomous-driving-project
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Gazebo simulation
+ros2 launch autonomous_driving simulation.launch.py
+
+# Run the autonomous driving node
+ros2 run autonomous_driving main_node</code></pre>
+
+            <h3>Project Structure</h3>
+            <pre><code>autonomous-driving-project/
+├── src/
+│   ├── perception/          # Computer vision & sensor processing
+│   ├── planning/            # Path planning algorithms
+│   ├── control/             # Vehicle control systems
+│   └── simulation/          # Gazebo world files & models
+├── config/                  # Configuration files
+├── launch/                  # ROS launch files
+├── docs/                    # Documentation
+├── tests/                   # Unit and integration tests
+└── README.md</code></pre>
+        </section>
+
+        <section id="resources">
+            <h2>Resources & References</h2>
+
+            <h3>Learning Materials</h3>
+            <ul>
+                <li><a href="https://gazebosim.org/docs" target="_blank">Gazebo Documentation</a></li>
+                <li><a href="https://docs.ros.org/en/humble/" target="_blank">ROS 2 Documentation</a></li>
+                <li><a href="https://opencv.org/university/" target="_blank">OpenCV Tutorials</a></li>
+                <li><a href="https://www.coursera.org/specializations/self-driving-cars" target="_blank">Self-Driving Cars Specialization</a></li>
+            </ul>
+
+            <h3>Related Research</h3>
+            <ul>
+                <li>End-to-End Learning for Self-Driving Cars</li>
+                <li>SLAM Algorithms for Autonomous Navigation</li>
+                <li>Deep Reinforcement Learning for Autonomous Driving</li>
+                <li>Sensor Fusion Techniques</li>
+            </ul>
+
+            <h3>Contact</h3>
+            <p>For questions or collaboration inquiries, please reach out to the team members.</p>
+        </section>
+
+        <!-- Placeholder for future demo videos/images -->
+        <section id="demo" style="display: none;">
+            <h2>Demonstration</h2>
+            <div class="video-container">
+                <!-- Add YouTube embed or local video here -->
+                <p style="text-align: center; padding: 2rem;">Demo videos coming soon...</p>
+            </div>
+
+            <h3>Screenshots</h3>
+            <div class="gallery">
+                <!-- Add images here using JavaScript: ProjectUtils.addImage() -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Autonomous Driving Algorithm Project</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Computer Engineering Final Year Project</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            Can Soysal · Cagri Sanli · Mustafa Cem Hur · Taha Ugan · Taylan Kayali
+        </p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
